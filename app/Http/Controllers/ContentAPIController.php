@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Content;
+
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 
-use App\Models\User;
-
-class UserAPIController extends Controller
+class ContentAPIController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,11 +17,14 @@ class UserAPIController extends Controller
      */
     public function index()
     {
-        $owner = User::select('name', 'email', 'mobile')->where('id', 1)->get();
+        $content = Content::with('users')
+        ->select('user_id', 'header', 'description-indonesia', 
+            'description-english', 'email', 'mobile')->get();
         $response = [
-            'message' => "User Table Found Successfully",
-            'data' => $owner
+            'message' => 'Content Table Found Successfully',
+            'data' => $content,
         ];
+
         return response()->json($response, HttpFoundationResponse::HTTP_OK);
     }
 

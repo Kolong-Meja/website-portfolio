@@ -6,6 +6,10 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UserAPIController;
 
+use App\Http\Controllers\ContentAPIController;
+
+use App\Http\Controllers\ImageAPIController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -23,5 +27,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 /* User Route */
 Route::get('user', [UserAPIController::class, 'index'])->name('user.index');
+
+/* Content Route */
+Route::get('content', [ContentAPIController::class, 'index'])->name('content.index');
+
+/* Image Route */
+Route::get('image', [ImageAPIController::class, 'index'])->name('image.index');
 
 

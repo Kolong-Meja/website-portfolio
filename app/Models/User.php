@@ -4,9 +4,16 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+
 use Illuminate\Foundation\Auth\User as Authenticatable;
+
 use Illuminate\Notifications\Notifiable;
+
 use Laravel\Sanctum\HasApiTokens;
+
+use App\Models\Content;
+
+use App\Models\Image;
 
 class User extends Authenticatable
 {
@@ -42,4 +49,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function contents() {
+        return $this->hasMany(Content::class);
+    }
+
+    public function images() {
+        return $this->hasMany(Image::class);
+    }
 }
