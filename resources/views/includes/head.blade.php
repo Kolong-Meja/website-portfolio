@@ -9,4 +9,6 @@ crossorigin="anonymous" />
 
 <link rel="stylesheet" href="{{ url('web.css')}}" />
 
+<link rel="shortcut icon" href="{{ url('image/TERANG.png')}}" type="image/x-icon">
+
 <title>{{ config('app.name') }}</title>
