@@ -18,8 +18,8 @@ return new class extends Migration
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('header');
-            $table->text('description-indonesia');
-            $table->text('description-english');
+            $table->text('description_indonesia');
+            $table->text('description_english');
             $table->string('email');
             $table->char('mobile', 13)->unique();
             $table->timestamps();

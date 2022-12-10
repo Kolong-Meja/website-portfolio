@@ -1,0 +1,29 @@
+.head-content {
+    position: relative;
+    top: 0.6cm;
+    left: 2.5cm;
+    width: 20%;
+}
+
+img {
+    position: relative;
+    top: 1.5cm;
+    left: 2.8cm;
+    width: 200px;
+}
+
+#content-desc-en {
+    width: 80%;
+    height: 50%;
+    text-align: justify;
+    width: 60%;
+    position: relative;
+    left: 13cm;
+    bottom: 6.8cm;
+}
+
+.head-section {
+    position: relative;
+    left: 2.5cm;
+    bottom: 4cm;
+}
