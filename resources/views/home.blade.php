@@ -5,14 +5,16 @@
 </head>
 <body>
     <div class="container mt-5">
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
         <div class="row gy-5">
             <div class="col-6">
                 <h1>{{ $content_header}} </h1>
-                <small class="text-muted">created by {{ $user_name }}</small>
+                <small class="small-text">created by {{ $user_name }}</small>
             </div>
             <div class="col-6">
                 <p>{{ $content_description_english}}</p>
@@ -72,8 +74,6 @@
             </div>
         </div>
     </div>
-    <script>
-        
-    </script>
+    <script src="{{ url('web.js')}}"></script>
 </body>
 </html>
