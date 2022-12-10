@@ -19,6 +19,9 @@ return new class extends Migration
             $table->string('email');
             $table->char('mobile', 13)->unique();
             $table->string('password');
+            $table->string('twitter');
+            $table->string('instagram');
+            $table->string('github');
             $table->timestamps();
         });
     }

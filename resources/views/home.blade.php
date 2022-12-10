@@ -4,23 +4,76 @@
     @include('includes.head')
 </head>
 <body>
-    <h2 class="head-content">{{ $content_header }}</h2>
-    <img class="rounded-circle shadow-4-strong" src="{{ url('image/20210528_184700.jpg')}}" alt="foto pribadi"/>
-    <p id="content-desc-en">{{ $content_description_english }} </p>
-    <h2 class="head-section">My Projects</h2>
-    <div class="list-social-media">
-        
+    <div class="container mt-5">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <div class="row gy-5">
+            <div class="col-6">
+                <h1>{{ $content_header}} </h1>
+                <small class="text-muted">created by {{ $user_name }}</small>
+            </div>
+            <div class="col-6">
+                <p>{{ $content_description_english}}</p>
+            </div>
+            <div class="col-6">
+                <h2>Social Media</h2>
+                <div class="card border-dark" style="max-width: 480px;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="{{ url('image/20210528_184700.jpg')}}" class="rounded-circle" alt="github_logo" style="max-width: 150px; margin: 15px;">
+                        </div>
+                        <div class="col">
+                            <div class="card-body">
+                                <h5 class="card-title">Social Media</h5>
+                                <p class="card-text">
+                                    <a href={{ $user_twitter_account }}>
+                                        <img src="{{ url('image/twitter.svg')}}" alt="twitter icon">
+                                        My Twitter
+                                    </a>
+                                    <br>
+                                    <a href={{ $user_instagram_account }}>
+                                        <img src="{{ url('image/instagram.svg')}}" alt="instagram icon">
+                                        My Instagram
+                                    </a>
+                                    <br>
+                                    <a href={{ $user_github_account }}>
+                                        <img src="{{ url('image/github.svg')}}" alt="github icon">
+                                        My Github
+                                    </a>
+                                    <br>
+                                    <a href="mailto:{{ $user_email }}">
+                                        <img src="{{ url('image/envelope-at.svg')}}" alt="email icon">
+                                        My Email
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <h2>My Team Projects</h2>
+                <a href={{ $project_link }} style="text-decoration: none; color:black;">
+                <div class="card border-dark" style="max-width: 480px;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="{{ url('image/github_logo.png')}}" class="img-fluid rounded-start" alt="github_logo" style="max-width: 150px; margin: 15px;">
+                        </div>
+                        <div class="col">
+                            <div class="card-body">
+                                <h5 class="card-title">Elisabeth Cookies Project</h5>
+                                <p class="card-text">This is a project that my project team has created, although it is still under development. Please have a look</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-   {{-- <p>{{ $user_name }}</p>
-   <p>{{ $user_email }}</p>
-   <p>{{ $user_mobile }}</p> --}}
-   {{-- <p id="content-desc-in">{{ $content_description_indonesia }}</p> --}}
-    {{-- @include('include.footer') --}}
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
-    crossorigin="anonymous"></script>
-
-    <script src="web.js"></script>
+    <script>
+        
+    </script>
 </body>
 </html>

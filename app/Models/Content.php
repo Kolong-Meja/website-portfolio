@@ -9,6 +9,8 @@ class Content extends Model
 {
     use HasFactory;
 
+    protected $table = 'contents';
+
     protected $fillable = [
         'user_id', 'header', 'description_indonesia', 
         'description_english' ,'image', 'email', 'mobile'

@@ -20,8 +20,11 @@ class UserSeeder extends Seeder
         User::create([
             'name' => "Faisal Ramadhan",
             'email' => "faisalramadhan1299@gmail.com",
-            'mobile' => "085891180613",
-            'password' => bcrypt("12345678")
+            'mobile' => "6285891180613",
+            'password' => bcrypt("12345678"),
+            'twitter' => 'https://twitter.com/EquanimityRF',
+            'instagram' => 'https://www.instagram.com/faisalrmdhn08/',
+            'github' => 'https://github.com/Kolong-Meja',
         ]);
     }
 }

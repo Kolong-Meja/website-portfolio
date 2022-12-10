@@ -14,6 +14,8 @@ class Image extends Model
 {
     use HasFactory;
 
+    protected $table = 'images';
+
     protected $fillable = [
         'user_id', 'content_id', 'name'
     ];
