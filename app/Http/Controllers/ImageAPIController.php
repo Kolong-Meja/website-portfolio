@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Image;
+
+use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+
 class ImageAPIController extends Controller
 {
     /**
@@ -13,7 +17,13 @@ class ImageAPIController extends Controller
      */
     public function index()
     {
-        //
+        $image = Image::with('users', 'contents')->get();
+        $response = [
+            'message' => 'Image Table Found Successfully',
+            'data' => $image,
+        ];
+
+        return response()->json($response, HttpFoundationResponse::HTTP_OK);
     }
 
     /**
