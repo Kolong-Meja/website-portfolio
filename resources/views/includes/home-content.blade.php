@@ -15,7 +15,7 @@
         </div>
         <div class="col-6">
             <h2>Social Media</h2>
-            <div class="card border-dark" style="max-width: 480px;">
+            <div class="card" style="max-width: 480px;">
                 <div class="row">
                     <div class="col-md-4">
                         <img src="{{ url('image/20210528_184700.jpg')}}" class="rounded-circle" alt="github_logo" style="max-width: 150px; padding: 15px;">
@@ -50,9 +50,9 @@
             </div>
         </div>
         <div class="col-6">
-            <h2>My Team Projects</h2>
+            <h2>Projects</h2>
             <a href={{ $project_link }} style="text-decoration: none; color:black;">
-            <div class="card border-dark" style="max-width: 480px;">
+            <div class="card" style="max-width: 480px;">
                 <div class="row">
                     <div class="col-md-4">
                         <img src="{{ url('image/github_logo.png')}}" class="img-fluid rounded-start" alt="github_logo" style="max-width: 150px; padding: 15px;">

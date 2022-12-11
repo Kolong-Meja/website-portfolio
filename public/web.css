@@ -4,6 +4,7 @@
     --font-color: #000000;
     --bg-color: #fff;
     --heading-color: #292922;
+    --box-shadow: 10px 10px #272727;
 }
 
 [data-theme="dark"] {
@@ -12,7 +13,8 @@
     --third-color: black;
     --font-color: #e1e1ff;
     --bg-color: #161625;
-    --heading-color: #818cab;
+    --heading-color: #224092;
+    --box-shadow: 10px 10px #8859d4;
 }
 
 body {
@@ -31,6 +33,11 @@ h5 {
 a {
     color: var(--third-color);
     text-decoration: none;
+}
+
+.card {
+    margin-top: 20px;
+    box-shadow: var(--box-shadow);
 }
 
 .theme-switch-wrapper {
@@ -103,3 +110,6 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+
+
