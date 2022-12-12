@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container mt-5 mb-5">
     <div class="theme-switch-wrapper">
         <label class="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
@@ -11,14 +11,14 @@
             <small class="small-text">created by {{ $user_name }}</small>
         </div>
         <div class="col-6">
-            <p>{{ $content_description_english}}</p>
+            <p class="content-desc">{{ $content_description_english}}</p>
         </div>
         <div class="col-6">
             <h2>Social Media & Email</h2>
             <div class="card" style="max-width: 480px;">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="{{ url('image/20210528_184700.jpg')}}" class="rounded-circle" alt="github_logo" style="max-width: 150px; padding: 15px;">
+                        <img src="{{ url('image/20210528_184700.jpg')}}" class="rounded-circle" alt="github_logo" />
                     </div>
                     <div class="col">
                         <div class="card-body">
@@ -52,19 +52,23 @@
         <div class="col-6">
             <h2>Projects</h2>
             <a href={{ $project_link }} style="text-decoration: none; color:black;">
-            <div class="card" style="max-width: 480px;">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="{{ url('image/github_logo.png')}}" class="img-fluid rounded-start" alt="github_logo" style="max-width: 150px; padding: 15px;">
-                    </div>
-                    <div class="col">
-                        <div class="card-body">
-                            <h5 class="card-title">Elisabeth Cookies Project</h5>
-                            <p class="card-text">This is a project that my project team has created, although it is still under development. Please have a look</p>
+                <div class="card" style="max-width: 480px;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="{{ url('image/github_logo.png')}}" class="img-fluid rounded-start" alt="github_logo" />
+                        </div>
+                        <div class="col">
+                            <div class="card-body">
+                                <h5 class="card-title">Elisabeth Cookies Project</h5>
+                                <p class="card-text">This is a project that my project team has created, although it is still under development. Please have a look</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                </a>
+        </div>
+        <div class="footer">
+            <p class="copyright-text">© Copyright All Rights Reserved</p>
         </div>
     </div>
 </div>
