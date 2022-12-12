@@ -14,7 +14,7 @@
             <p>{{ $content_description_english}}</p>
         </div>
         <div class="col-6">
-            <h2>Social Media</h2>
+            <h2>Social Media & Email</h2>
             <div class="card" style="max-width: 480px;">
                 <div class="row">
                     <div class="col-md-4">
@@ -22,7 +22,7 @@
                     </div>
                     <div class="col">
                         <div class="card-body">
-                            <h5 class="card-title">Social Media</h5>
+                            <h5 class="card-title">Social Media & Email</h5>
                             <p class="card-text">
                                 <a href={{ $user_twitter_account }}>
                                     <img src="{{ url('image/twitter.svg')}}" alt="twitter icon">
