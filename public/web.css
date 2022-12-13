@@ -128,7 +128,7 @@ input:checked + .slider:before {
 }
 
 /* CSS */
-.button-18 {
+button.button-18 {
     align-items: center;
     background-color: var(--button-color);
     border: 0;
@@ -158,17 +158,18 @@ input:checked + .slider:before {
     margin-top: 40px;
 }
 
-.button-18:hover, .button-18:focus { 
+button.button-18:hover, 
+button.button-18:focus { 
   background-color: var(--button-color-hover);
   color: #ffffff;
 }
 
-.button-18:active {
+button.button-18:active {
   background: var(--button-color-hover);
   color: rgb(255, 255, 255, .7);
 }
 
-.button-18:disabled { 
+button.button-18:disabled { 
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);

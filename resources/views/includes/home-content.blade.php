@@ -27,7 +27,7 @@
             <div class="card" style="max-width: 480px;">
                 <div class="row">
                     <div class="col-md-4">
-                        <img class="rounded-circle" src="{{ url('image/20210528_184700.jpg')}}" alt="github_logo" />
+                        <img class="rounded-circle" src="{{ url('image/20210528_184700.jpg')}}" alt="github_logo"/>
                     </div>
                     <div class="col">
                         <div class="card-body">
