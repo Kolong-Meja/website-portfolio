@@ -5,16 +5,25 @@
             <div class="slider round"></div>
         </label>
     </div>
-    <div class="row gy-5">
+
+    <!-- Web-header -->
+    <div class="row gy-4">
         <div class="col-6">
             <h1>{{ $content_header}} </h1>
             <small class="small-text">created by {{ $user_name }}</small>
+            <div class="col">
+                <a href="mailto:{{ $user_email }}">
+                    <button class="button-18" role="button">Contact Me</button>
+                </a>
+            </div>
         </div>
         <div class="col-6">
             <p class="content-desc">{{ $content_description_english}}</p>
         </div>
+
+        <!-- Web-Content -->
         <div class="col-6">
-            <h2>Social Media & Email</h2>
+            <h2>Social Media</h2>
             <div class="card" style="max-width: 480px;">
                 <div class="row">
                     <div class="col-md-4">
@@ -22,26 +31,21 @@
                     </div>
                     <div class="col">
                         <div class="card-body">
-                            <h5 class="card-title">Social Media & Email</h5>
+                            <h5 class="card-title">Social Media</h5>
                             <p class="card-text">
-                                <a href={{ $user_twitter_account }}>
+                                <a href={{ $user_twitter_account }} target="__blank">
                                     <img src="{{ url('image/twitter.svg')}}" alt="twitter icon">
-                                    My Twitter
+                                    Twitter
                                 </a>
                                 <br>
-                                <a href={{ $user_instagram_account }}>
+                                <a href={{ $user_instagram_account }} target="__blank">
                                     <img src="{{ url('image/instagram.svg')}}" alt="instagram icon">
-                                    My Instagram
+                                    Instagram
                                 </a>
                                 <br>
-                                <a href={{ $user_github_account }}>
+                                <a href={{ $user_github_account }} target="__blank">
                                     <img src="{{ url('image/github.svg')}}" alt="github icon">
-                                    My Github
-                                </a>
-                                <br>
-                                <a href="mailto:{{ $user_email }}">
-                                    <img src="{{ url('image/envelope-at.svg')}}" alt="email icon">
-                                    My Email
+                                    Github
                                 </a>
                             </p>
                         </div>
@@ -51,8 +55,8 @@
         </div>
         <div class="col-6">
             <h2>Projects</h2>
-            <a href={{ $project_link }} style="text-decoration: none; color:black;">
-                <div class="card" style="max-width: 480px;">
+            <a href={{ $project_link }} style="text-decoration: none; color:black;" target="__blank">
+                <div class="card" style="max-width: 480px">
                     <div class="row">
                         <div class="col-md-4">
                             <img class="img-fluid rounded-start" src="{{ url('image/github_logo.png')}}" alt="github_logo" />
@@ -65,10 +69,12 @@
                         </div>
                     </div>
                 </div>
-                </a>
+            </a>
         </div>
+        
+        <!-- Web-Footer -->
         <div class="footer">
             <p class="copyright-text">© Copyright All Rights Reserved</p>
         </div>
-    </div>
+    </div>  
 </div>

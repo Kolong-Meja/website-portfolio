@@ -4,12 +4,14 @@
     margin-left: 1cm;
 }
 
+/* variable for coloring element */
 :root {
     --primary-color: rgb(0, 0, 0);
     --secondary-color: rgb(0, 0, 0);
     --font-color: rgb(0, 0, 0);
     --bg-color: rgb(255, 255, 255);
-    --heading-color: rgb(41, 41, 34);
+    --button-color: rgb(20, 86, 172);
+    --button-color-hover: rgb(22, 67, 126);
     --box-shadow: 10px 10px rgb(39, 39, 39);
 }
 
@@ -19,34 +21,31 @@
     --third-color: rgb(0, 0, 0);
     --font-color: rgb(225, 225, 255);
     --bg-color: rgb(22, 22, 37);
-    --heading-color: rgb(34, 64, 146);
+    --button-color: rgb(136, 89, 212);
+    --button-color-hover: rgb(92, 59, 145);
     --box-shadow: 10px 10px rgb(136, 89, 212);
-}
-
-.link-contact {
-    color: rgb(255, 255, 255);
-}
-
-.copyright-text {
-    margin-left: 1cm;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--font-color);
-    width: 100%;
+    width: 100vw;
 }
 
 h1, h2, p.content-desc {
     color: var(--secondary-color);
 }
 
-h5 {
-    color: var(--third-color);
-}
-
 .small-text {
     color: var(--secondary-color);
+}
+
+.content-desc {
+    text-align: left;
+}
+
+h5 {
+    color: var(--third-color);
 }
 
 a {
@@ -54,23 +53,34 @@ a {
     text-decoration: none;
 }
 
+.link-contact {
+    color: rgb(255, 255, 255);
+}
+
+.copyright-text {
+    color: var(--font-color);
+    margin-left: 1cm;
+    position: absolute;
+}
+
 .rounded-circle, .img-fluid{
     max-width: 150px; 
     padding: 15px;
-}
-
-.d-grip {
-    margin-top: 30px;
 }
 
 .card {
     margin-top: 20px;
     box-shadow: var(--box-shadow);
     transition: transform .2s;
+    text-align: center;
 }
 
 .card:hover {
     transform: scale(1.1);
+}
+
+.d-grip {
+    margin-top: 30px;
 }
 
 /*Simple css to style it like a toggle switch*/
@@ -129,4 +139,51 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+/* Contact Me Button */
+.button-18 {
+    align-items: center;
+    background-color: var(--button-color);
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    margin-top: 35px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.button-18:hover, .button-18:focus { 
+  background-color: var(--button-color-hover);
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: var(--button-color-hover);
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
 }
