@@ -20,15 +20,6 @@ class HomeController extends Controller
                 'contents.description_english'
                 )->where('contents.id', '=', 1)->first();
 
-            // $main_content = DB::table('contents')
-            // ->join('users', 'users.id', '=', 'contents.user_id')
-            // ->select(
-            //     'contents.id', 'users.name', 'users.email', 'users.mobile', 
-            //     'users.twitter', 'users.instagram', 'users.github',
-            //     'contents.header', 'contents.description_indonesia', 
-            //     'contents.description_english'
-            //     )->where('contents.id', '=', 1)->first();
-
             $elisabeth_cookies_project_link = 'https://github.com/Kolong-Meja/Website-Elizabeth-Cookies';
 
             $data_compact = array(
