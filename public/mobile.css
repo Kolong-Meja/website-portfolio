@@ -1,3 +1,10 @@
+ /* Phones Only */
+    
+ [class="col-6"] {
+    width: 75%;
+    margin-left: 1cm;
+}
+
 :root {
     --primary-color: rgb(0, 0, 0);
     --secondary-color: rgb(0, 0, 0);
@@ -21,9 +28,14 @@
     color: rgb(255, 255, 255);
 }
 
+.copyright-text {
+    margin-left: 1cm;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--font-color);
+    width: 100%;
 }
 
 h1, h2, p.content-desc {
@@ -41,10 +53,6 @@ h5 {
 a {
     color: var(--third-color);
     text-decoration: none;
-}
-
-.copyright-text {
-    color: var(--font-color);
 }
 
 .rounded-circle, .img-fluid{
@@ -70,7 +78,9 @@ a {
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 1cm;
 }
 
 .theme-switch {
@@ -79,13 +89,13 @@ a {
     position: relative;
     width: 60px;
 }
-  
+
 .theme-switch input {
     display:none;
 }
 
 .slider {
-    background-color: #ccc;
+    background-color: rgb(204, 204, 204);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -113,11 +123,11 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
-  
+
 .slider.round {
     border-radius: 34px;
 }
-  
+
 .slider.round:before {
     border-radius: 50%;
 }
