@@ -52,7 +52,7 @@ a {
     position: absolute;
 }
 
-.rounded-circle, .img-fluid{
+img.rounded-circle, img.img-fluid{
     max-width: 150px; 
     padding: 15px;
 }

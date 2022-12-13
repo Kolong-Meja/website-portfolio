@@ -55,7 +55,7 @@
         </div>
         <div class="col-6">
             <h2>Projects</h2>
-            <a href={{ $project_link }} style="text-decoration: none; color:black;" target="__blank">
+            <a href={{ $project_link }} style="text-decoration: none; color:black;">
                 <div class="card" style="max-width: 480px">
                     <div class="row">
                         <div class="col-md-4">
