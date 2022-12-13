@@ -18,7 +18,7 @@
             <div class="card" style="max-width: 480px;">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="{{ url('image/20210528_184700.jpg')}}" class="rounded-circle" alt="github_logo" />
+                        <img class="rounded-circle" src="{{ url('image/20210528_184700.jpg')}}" alt="github_logo" />
                     </div>
                     <div class="col">
                         <div class="card-body">
@@ -55,7 +55,7 @@
                 <div class="card" style="max-width: 480px;">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="{{ url('image/github_logo.png')}}" class="img-fluid rounded-start" alt="github_logo" />
+                            <img class="img-fluid rounded-start" src="{{ url('image/github_logo.png')}}" alt="github_logo" />
                         </div>
                         <div class="col">
                             <div class="card-body">
