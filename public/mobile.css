@@ -4,14 +4,28 @@
     margin-left: 1cm;
 }
 
+.col-4 {
+    width: auto;
+}
+
+#head-2 {
+    margin-top: 20px;
+}
+
+#slogan {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 48px;
+}
+
 /* variable for coloring element */
 :root {
     --primary-color: rgb(0, 0, 0);
     --secondary-color: rgb(0, 0, 0);
     --font-color: rgb(0, 0, 0);
     --bg-color: rgb(255, 255, 255);
-    --button-color: rgb(20, 86, 172);
-    --button-color-hover: rgb(22, 67, 126);
+    --button-color: rgb(22, 93, 185);
+    --button-color-hover: rgb(25, 77, 146);
     --box-shadow: 10px 10px rgb(39, 39, 39);
 }
 
@@ -71,12 +85,7 @@ a {
 .card {
     margin-top: 20px;
     box-shadow: var(--box-shadow);
-    transition: transform .2s;
     text-align: center;
-}
-
-.card:hover {
-    transform: scale(1.1);
 }
 
 .d-grip {
@@ -166,7 +175,6 @@ input:checked + .slider:before {
     padding-right: 20px;
     text-align: center;
     touch-action: manipulation;
-    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     user-select: none;
     -webkit-user-select: none;
     vertical-align: middle;

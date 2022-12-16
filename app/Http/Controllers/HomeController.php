@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\DB;
 
+use Illuminate\Support\Facades\Storage;
+
 use App\Models\Content;
 
 class HomeController extends Controller
@@ -20,6 +22,7 @@ class HomeController extends Controller
                 'contents.description_english'
                 )->where('contents.id', '=', 1)->first();
 
+            $slogan = "I am ready to help create and develop your website";
             $elisabeth_cookies_project_link = 'https://github.com/Kolong-Meja/Website-Elizabeth-Cookies';
 
             $data_compact = array(
@@ -33,15 +36,21 @@ class HomeController extends Controller
                 'content_header' => $content->header,
                 'content_description_indonesia' => $content->description_indonesia,
                 'content_description_english' => $content->description_english,
+                'slogan' => $slogan,
             );
 
-            $selected_id = 1;
-            if ($content->id != $selected_id) {
-                return abort(404);    
-            }
+            // $selected_id = 1;
+            // if ($content->id != $selected_id) {
+            //     return abort(404);    
+            // }
             return view('home', $data_compact);
         } catch (Exception $e) {
             return $e->getMessage();
         }
+    }
+
+    public function download() {
+        $cv = public_path('file/faisal_ramadhan_cv.pdf');
+        return response()->download($cv);
     }
 }

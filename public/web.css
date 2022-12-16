@@ -1,3 +1,11 @@
+.col-4 {
+    width: auto;
+}
+
+#slogan {
+    margin-top: 45px;
+}
+
 :root {
     --primary-color: rgb(0, 0, 0);
     --secondary-color: rgb(0, 0, 0);
@@ -14,7 +22,7 @@
     --secondary-color: rgb(255, 255, 255);
     --third-color: rgb(0, 0, 0);
     --font-color: rgb(225, 225, 255);
-    --bg-color: rgb(22, 22, 37);
+    --bg-color: rgb(15, 10, 24);
     --button-color: rgb(136, 89, 212);
     --button-color-hover: rgb(92, 59, 145);
     --heading-color: rgb(34, 64, 146);
