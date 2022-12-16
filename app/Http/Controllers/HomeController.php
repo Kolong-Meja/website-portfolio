@@ -39,10 +39,10 @@ class HomeController extends Controller
                 'slogan' => $slogan,
             );
 
-            // $selected_id = 1;
-            // if ($content->id != $selected_id) {
-            //     return abort(404);    
-            // }
+            $selected_id = 1;
+            if ($content->id != $selected_id) {
+                return abort(404);    
+            }
             return view('home', $data_compact);
         } catch (Exception $e) {
             return $e->getMessage();

@@ -1,23 +1,4 @@
  /* Phones Only */
-.col-6 {
-    width: 75%;
-    margin-left: 1cm;
-}
-
-.col-4 {
-    width: auto;
-}
-
-#head-2 {
-    margin-top: 20px;
-}
-
-#slogan {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 48px;
-}
-
 /* variable for coloring element */
 :root {
     --primary-color: rgb(0, 0, 0);
@@ -90,6 +71,25 @@ a {
 
 .d-grip {
     margin-top: 30px;
+}
+
+.col-6 {
+    width: 75%;
+    margin-left: 1cm;
+}
+
+.col-4 {
+    width: auto;
+}
+
+#head-2 {
+    margin-top: 20px;
+}
+
+#slogan {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 48px;
 }
 
 /*Simple css to style it like a toggle switch*/

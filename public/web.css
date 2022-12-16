@@ -1,11 +1,3 @@
-.col-4 {
-    width: auto;
-}
-
-#slogan {
-    margin-top: 45px;
-}
-
 :root {
     --primary-color: rgb(0, 0, 0);
     --secondary-color: rgb(0, 0, 0);
@@ -77,6 +69,14 @@ img.rounded-circle, img.img-fluid{
 
 .card:hover {
     transform: scale(1.1);
+}
+
+.col-4 {
+    width: auto;
+}
+
+#slogan {
+    margin-top: 45px;
 }
 
 /*Simple css to style it like a toggle switch*/
