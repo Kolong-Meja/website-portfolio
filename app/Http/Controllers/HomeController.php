@@ -22,6 +22,7 @@ class HomeController extends Controller
                 'contents.description_english'
                 )->where('contents.id', '=', 1)->first();
 
+            $cv_file = 'file/faisal_ramadhan_cv.pdf';
             $slogan = "I am ready to help create and develop your website";
             $elisabeth_cookies_project_link = 'https://github.com/Kolong-Meja/Website-Elizabeth-Cookies';
 
@@ -37,6 +38,7 @@ class HomeController extends Controller
                 'content_description_indonesia' => $content->description_indonesia,
                 'content_description_english' => $content->description_english,
                 'slogan' => $slogan,
+                'cv_file' => $cv_file,
             );
 
             $selected_id = 1;

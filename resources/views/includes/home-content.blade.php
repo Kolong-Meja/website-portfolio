@@ -18,7 +18,7 @@
                     </a>
                 </div>
                 <div class="col-4">
-                    <a href="file/faisal_ramadhan_cv.pdf" target="__blank" download="faisal_ramadhan_cv">
+                    <a href="{{ $cv_file }}" target="__blank" download="faisal_ramadhan_cv">
                         <button class="button-18" role="button">
                             Download My CV
                         </button>
