@@ -18,7 +18,7 @@
                     </a>
                 </div>
                 <div class="col-4">
-                    <a href="{{ URL::to('/')}}/file/faisal_ramadhan_cv.pdf">
+                    <a href="file/faisal_ramadhan_cv.pdf" target="__blank" download="faisal_ramadhan_cv">
                         <button class="button-18" role="button">
                             Download My CV
                         </button>
