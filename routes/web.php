@@ -17,8 +17,6 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
-Route::get('download', [HomeController::class, 'download'])->name('home.download');
-
 // Route::get('/', function () {
 //     return view('welcome');
 // });

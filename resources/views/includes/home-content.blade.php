@@ -18,8 +18,10 @@
                     </a>
                 </div>
                 <div class="col-4">
-                    <a href="{{ route('home.download') }}">
-                        <button class="button-18" role="button">Download My CV</button>
+                    <a href="{{ URL::to('/')}}/file/faisal_ramadhan_cv.pdf">
+                        <button class="button-18" role="button">
+                            Download My CV
+                        </button>
                     </a>
                 </div>
             </div>

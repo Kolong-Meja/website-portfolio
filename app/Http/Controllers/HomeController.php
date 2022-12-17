@@ -48,9 +48,4 @@ class HomeController extends Controller
             return $e->getMessage();
         }
     }
-
-    public function download() {
-        $cv = public_path('file/faisal_ramadhan_cv.pdf');
-        return response()->download($cv);
-    }
 }
