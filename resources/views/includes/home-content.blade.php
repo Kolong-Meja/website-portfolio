@@ -62,9 +62,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
-                <p class="copyright-text">© Copyright All Rights Reserved</p>
-            </div>
         </div>
         <div class="col-6">
             <h2 id="head-2">Projects</h2>
@@ -116,6 +113,9 @@
                       </button>
                 </div>
             </div>
+        </div>
+        <div class="col-6">
+            <p class="copyright-text">© Copyright All Rights Reserved</p>
         </div>
     </div>  
 </div>

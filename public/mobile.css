@@ -4,9 +4,11 @@
     --primary-color: rgb(0, 0, 0);
     --secondary-color: rgb(0, 0, 0);
     --font-color: rgb(0, 0, 0);
+    --card-font-color: rgb(0, 0, 0);
     --bg-color: rgb(255, 255, 255);
-    --button-color: rgb(22, 93, 185);
-    --button-color-hover: rgb(25, 77, 146);
+    --button-color: rgb(20, 86, 172);
+    --button-color-hover: rgb(22, 67, 126);
+    --heading-color: rgb(41, 41, 34);
     --box-shadow: 10px 10px rgb(39, 39, 39);
 }
 
@@ -15,9 +17,11 @@
     --secondary-color: rgb(255, 255, 255);
     --third-color: rgb(0, 0, 0);
     --font-color: rgb(225, 225, 255);
-    --bg-color: rgb(22, 22, 37);
+    --card-font-color: rgb(0, 0, 0);
+    --bg-color: rgb(15, 10, 24);
     --button-color: rgb(136, 89, 212);
     --button-color-hover: rgb(92, 59, 145);
+    --heading-color: rgb(34, 64, 146);
     --box-shadow: 10px 10px rgb(136, 89, 212);
 }
 
@@ -54,7 +58,6 @@ a {
 
 .copyright-text {
     color: var(--font-color);
-    margin-left: 1cm;
     position: absolute;
 }
 
@@ -70,12 +73,29 @@ a {
 }
 
 #second {
-    margin-top: 20px;
     text-align: center;
 }
 
 .d-grip {
     margin-top: 30px;
+}
+
+.card-text {
+    color: var(--card-font-color)
+}
+
+.carousel {
+    margin-top: 20px;
+    background-color: white;
+}
+
+.card-text {
+    color: var(--card-font-color)
+}
+
+#projects {
+    margin-top: 20px;
+    box-shadow: var(--box-shadow);
 }
 
 .col-6 {
