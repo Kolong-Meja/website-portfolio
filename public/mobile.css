@@ -63,9 +63,14 @@ a {
     padding: 15px;
 }
 
-.card {
+#first {
     margin-top: 20px;
     box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+#second {
+    margin-top: 20px;
     text-align: center;
 }
 

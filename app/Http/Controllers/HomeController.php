@@ -25,6 +25,7 @@ class HomeController extends Controller
             $cv_file = 'file/faisal_ramadhan_cv.pdf';
             $slogan = "I am ready to help create and develop your website";
             $elisabeth_cookies_project_link = 'https://github.com/Kolong-Meja/Website-Elizabeth-Cookies';
+            $portfolio_project_link = 'https://github.com/Kolong-Meja/website-portfolio';
 
             $data_compact = array(
                 'user_name' => $content->name,
@@ -33,7 +34,8 @@ class HomeController extends Controller
                 'user_twitter_account' => $content->twitter,
                 'user_instagram_account' => $content->instagram,
                 'user_github_account' => $content->github,
-                'project_link' => $elisabeth_cookies_project_link,
+                'first_project_link' => $elisabeth_cookies_project_link,
+                'second_project_link' => $portfolio_project_link,
                 'content_header' => $content->header,
                 'content_description_indonesia' => $content->description_indonesia,
                 'content_description_english' => $content->description_english,

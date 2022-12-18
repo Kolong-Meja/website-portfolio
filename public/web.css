@@ -2,6 +2,7 @@
     --primary-color: rgb(0, 0, 0);
     --secondary-color: rgb(0, 0, 0);
     --font-color: rgb(0, 0, 0);
+    --card-font-color: black;
     --bg-color: rgb(255, 255, 255);
     --button-color: rgb(20, 86, 172);
     --button-color-hover: rgb(22, 67, 126);
@@ -14,6 +15,7 @@
     --secondary-color: rgb(255, 255, 255);
     --third-color: rgb(0, 0, 0);
     --font-color: rgb(225, 225, 255);
+    --card-font-color: black;
     --bg-color: rgb(15, 10, 24);
     --button-color: rgb(136, 89, 212);
     --button-color-hover: rgb(92, 59, 145);
@@ -50,6 +52,8 @@ a {
 .copyright-text {
     color: var(--font-color);
     position: absolute;
+    bottom: 10px;
+
 }
 
 img.rounded-circle, img.img-fluid{
@@ -61,14 +65,28 @@ img.rounded-circle, img.img-fluid{
     margin-top: 30px;
 }
 
-.card {
+.carousel {
+    margin-top: 20px;
+    background-color: white;
+}
+
+.card-text {
+    color: var(--card-font-color)
+}
+
+#first {
     margin-top: 20px;
     box-shadow: var(--box-shadow);
     transition: transform .2s;
 }
 
-.card:hover {
+#first:hover {
     transform: scale(1.1);
+}
+
+#projects {
+    margin-top: 20px;
+    box-shadow: var(--box-shadow);
 }
 
 .col-4 {

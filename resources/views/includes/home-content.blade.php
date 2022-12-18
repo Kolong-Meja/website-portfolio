@@ -34,10 +34,10 @@
         <!-- Web-Content -->
         <div class="col-6">
             <h2 id="head-1">Social Media</h2>
-            <div class="card" style="max-width: 480px;">
+            <div class="card" style="max-width: 480px;" id="first">
                 <div class="row">
                     <div class="col-md-4">
-                        <img class="rounded-circle" src="{{ asset('image/20210528_184700.jpg')}}" alt="github_logo"/>
+                        <img class="rounded-circle" src="{{ asset('image/20210528_184700.jpg')}}" alt="my_picture"/>
                     </div>
                     <div class="col">
                         <div class="card-body">
@@ -62,29 +62,60 @@
                     </div>
                 </div>
             </div>
+            <div class="col-6">
+                <p class="copyright-text">© Copyright All Rights Reserved</p>
+            </div>
         </div>
         <div class="col-6">
             <h2 id="head-2">Projects</h2>
-            <a href={{ $project_link }} style="text-decoration: none; color:black;">
-                <div class="card" style="max-width: 480px">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img class="img-fluid rounded-start" src="{{ asset('image/github_logo.png')}}" alt="github_logo" />
-                        </div>
-                        <div class="col">
-                            <div class="card-body">
-                                <h5 class="card-title">Elisabeth Cookies Project</h5>
-                                <p class="card-text">This is a project that my project team has created, although it is still under development. Please have a look</p>
+            <div id="projects" class="carousel slide rounded" data-bs-ride="carousel">
+                <div class="carousel-inner rounded border">
+                    <div class="carousel-item active">
+                        <div class="card border-0" id="second">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <a href="{{ $first_project_link }}">
+                                        <img src="{{ asset('image/github_logo.png')}}" class="img-fluid rounded-start" alt="github_logo">
+                                    </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Elisabeth Cookies Project</h5>
+                                        <p class="card-text">Elisabeth Cookies is the first online store website that my team and I created in 2022. The processing time for this website is approximately 2 weeks more. This is a really great project for me and my team, that we can create our own online shop website.</p>
+                                        <p class="card-text"><small class="text-muted">Created At Wednesday November 30 2022</small></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <div class="card border-0" id="second">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <a href="{{ $second_project_link }}">
+                                        <img src="{{ asset('image/github_logo.png')}}" class="img-fluid rounded-start" alt="github_logo">
+                                    </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Portfolio Website Project</h5>
+                                        <p class="card-text">Faisal Ramadhan Portfolio Website is a website project that I created alone at the end of 2022. The idea of making this personal portfolio website was born because of my boredom while at home. Thankfully, God made it easy for me and I managed to publish this website on the Google page.</p>
+                                        <p class="card-text"><small class="text-muted">Created at Saturday December 10 2022</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projects" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#projects" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
                 </div>
-            </a>
-        </div>
-        
-        <!-- Web-Footer -->
-        <div class="footer">
-            <p class="copyright-text">© Copyright All Rights Reserved</p>
+            </div>
         </div>
     </div>  
 </div>
